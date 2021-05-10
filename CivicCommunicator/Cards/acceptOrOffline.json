@@ -1,0 +1,22 @@
+{
+  "type": "AdaptiveCard",
+  "body": [],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Accept Request",
+      "data": {
+        "action": "acceptRequest"
+      }
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Go Offline",
+      "data": {
+        "action": "goOffline"
+      }
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0"
+}

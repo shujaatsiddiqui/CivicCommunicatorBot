@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Civic Chatbot</title>
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+
+
+  
+</head>
+
+<body>
+    <div class="image" style="height: 100%;width:100%;background-repeat:no-repeat; background-size:cover;  background-image:url(https://i.imgur.com/Pwgtgf8.png)"> </div>
+    <img src="~/Style/Chatbot_Icon_AIDA.png" onclick="hideShow();" id="botavatar" style="width:100px; height:100px;position: absolute; bottom: 0px; right: 0px">
+
+
+
+    <iframe id="webchat" src='@Url.Action("Index", "Home")' style="visibility:hidden;"></iframe>
+
+    <script>
+        const styleSet = window.WebChat.createStyleSet({
+            bubbleBackground: '#cecccc',                     /*#f1f1f1 ----lighter grey color*/
+            bubbleFromUserBackground: '#4873A4',
+            bubbleTextColor: 'black',
+            bubbleFromUserTextColor: 'white',
+            avatarSize: 36,
+            botAvatarInitials: 'BF',
+            userAvatarInitials: 'WC',
+
+            typingAnimationBackgroundImage: null,
+            typingAnimationDuration: 5000,
+            typingAnimationHeight: 20,
+            typingAnimationWidth: 64
+        });
+
+        // After generated, you can modify the CSS rules
+        styleSet.textContent = {
+            ...styleSet.textContent, fontFamily: "'sans-serif', 'Helvetica Neue', 'Arial', 'Calibri"
+        }
+
+            ;
+        var d1 = window.WebChat.createDirectLine({ token: 'zvMKDNrHf10.1ZahMRgGnMPPAO3wxZajrbJBFYHiYrbiFzC3oKniWSA' })
+        var siteDomain = document.URL
+        window.WebChat.renderWebChat({
+            directLine: Object.assign(
+                {},
+                d1,
+                {
+                    postActivity: activity => {
+                        var newActivity = Object.assign({}, activity, { channelData: { "siteDomain": siteDomain } });
+                        return d1.postActivity(newActivity);
+                    }
+                }),
+            styleSet
+        }, document.getElementById('webchat'));
+    </script>
+
+
+    <script>
+        function hideShow() {
+            let frame = document.getElementById("webchat");
+            frame.style.visibility = frame.style.visibility == "visible" ? "hidden" : "visible";
+            //let frame1 = document.getElementById("textBorder");
+            //frame1.style.visibility = frame1.style.visibility == "visible" ? "hidden" : "visible";
+            var img1 = "https://i.imgur.com/vCBGrr4.png";
+            var img2 = "https://i.imgur.com/hr6AyNY.png";
+            var imgElement = document.getElementById('botavatar');
+            imgElement.src = (imgElement.src === img1) ? img2 : img1;
+        }
+
+    </script>
+
+    <style>
+        html, body {
+            height: 100%
+        }
+
+        body {
+            margin: 0;
+            /*background-color: paleturquoise;*/
+        }
+
+
+        .header1 {
+            color: white;
+            font-size: 16px;
+            margin-left: 9px;
+            font-family: Calibri, "Helvetica Neue", Arial, sans-serif;
+            background-color: #4873A4;
+            box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+            box-sizing: content-box;
+            font-weight: 500;
+            height: 30px;
+            left: 0;
+            letter-spacing: 0.5px;
+            padding: 8px 8px 0 8px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+        }
+
+        #webchat {
+            height: 83%;
+            width: 447px;
+            position: absolute;
+            border-top: solid 1px;
+            border-left: solid 1px;
+            border-right: solid 1px;
+            border-bottom: solid 1px;
+            border-color: initial;
+            border-image: initial;
+            bottom: 18px;
+            right: 87px;
+            z-index: 2;
+            background-color: #fff;
+            border-top-left-radius: 13px;
+            border-top-right-radius: 13px;
+            border-bottom-left-radius: 13px;
+            border-bottom-right-radius: 13px;
+        }
+
+        /*#textBorder {
+            border-top: 13px solid #000;
+            border-left: solid 1px;
+            border-right: solid 1px;
+            border-bottom: solid 20px;
+            width: 458px;
+            position: absolute;
+            z-index: 1;
+            top: 76px;
+            right: 131px;
+            background-color: black;
+        }*/
+
+
+
+    </style>
+
+
+</body>
+</html>

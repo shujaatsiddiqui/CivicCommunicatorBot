@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Civic Chatbot</title>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            loadFrame();
+        });
+        var loadFrame = function () {
+            var iframe = document.createElement('iframe');
+            iframe.setAttribute("id", "iframe");
+            var offLineHTMLContent = "";
+            var frameElement = document.getElementById("how-to-iframe");
+            if (window.navigator.onLine) {
+                iframe.src = 'https://docs.botframework.com/static/abs/pages/f5.htm';
+                iframe.setAttribute("scrolling", "no");
+                iframe.setAttribute("frameborder", "0");
+                iframe.setAttribute("width", "100%");
+                iframe.setAttribute("height", "100%");
+                var frameDiv = document.getElementById("how-to-iframe");
+                frameDiv.appendChild(iframe);
+            } else {
+                frameElement.classList.add("remove-frame-height");
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <div class="image" style="height: 100%;width:100%;background-repeat:no-repeat; background-size:cover;  background-image:url(https://i.imgur.com/Pwgtgf8.png)"></div>
+    <img src="Style/Chatbot_Icon_AIDA.png" onclick="hideShow();" id="botavatar" style="width:150px; height:150px;position: absolute; bottom: 0px; right: 0px">
+
+
+    <div id="textBorder" style="visibility:hidden;">
+        <span class="header1">Hello, I am AIDA.</span>
+    </div>
+
+    <div id="webchat" role="main" style="visibility:hidden;"></div>
+
+    <!--<iframe id="webchat" src='Webchat.html' role="main" style="visibility:hidden"></iframe>-->
+
+
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+    <script>
+        const styleSet = window.WebChat.createStyleSet({
+            bubbleBackground: '#cecccc',                     /*#f1f1f1 ----lighter grey color*/
+            bubbleFromUserBackground: '#4873A4',
+            bubbleTextColor: 'black',
+            bubbleFromUserTextColor: 'white',
+            avatarSize: 36,
+
+            typingAnimationBackgroundImage: null,
+            typingAnimationDuration: 5000,
+            typingAnimationHeight: 20,
+            typingAnimationWidth: 64
+        });
+
+        // After generated, you can modify the CSS rules
+        styleSet.textContent = {
+            ...styleSet.textContent,
+            fontFamily: "'sans-serif', 'Helvetica Neue', 'Arial', 'Calibri"
+
+
+        };
+        var d1 = window.WebChat.createDirectLine({ token: 'Wyz5Sn3PrwI.qDTrWX1_rIvsRgDWFd_mhN2EqJR6YCrphlUBaQ2C0Xc' })
+        var siteDomain = document.URL
+        window.WebChat.renderWebChat({
+            directLine: Object.assign(
+                {},
+                d1,
+                {
+                    postActivity: activity => {
+                        var newActivity = Object.assign({}, activity, { channelData: { "siteDomain": siteDomain } });
+                        return d1.postActivity(newActivity);
+                    }
+                }),
+            styleSet
+        }, document.getElementById('webchat'));
+    </script>
+    <script>
+        function hideShow() {
+            let frame = document.getElementById("webchat");
+            frame.style.visibility = frame.style.visibility == "visible" ? "hidden" : "visible";
+            let frame1 = document.getElementById("textBorder");
+            frame1.style.visibility = frame1.style.visibility == "visible" ? "hidden" : "visible";
+
+            var img1 = "https://i.imgur.com/vCBGrr4.png";
+            var img2 = "https://i.imgur.com/hr6AyNY.png";
+            var imgElement = document.getElementById('botavatar');
+            imgElement.src = (imgElement.src === img1) ? img2 : img1;
+        }
+    </script>
+
+
+
+
+    <style>
+        html, body {
+            height: 100%
+        }
+
+        body {
+            margin: 0;
+            /*background-color: paleturquoise;*/
+        }
+
+        /*changes text color for welcome card.*/
+        .ac-textBlock {
+            color: black !important;
+        }
+
+
+        /*changes background color for welcome card.*/
+        .css-8tgfcx:not(.from-user) {
+            padding: 0px;
+            /*padding-right:10px;*/
+            padding-left: 6px;
+            border-radius: 10px;
+        }
+
+        /*changes design color-profile bubble from Bot*/
+        .css-8tgfcx.from-user {
+            border-radius: 10px;
+            padding: 0px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+
+        .css-mfy564 {
+            display: contents;
+        }
+
+        .css-2p02md, [data-css-2p02md] {
+            margin-top: -10px !important;
+            margin-left: auto !important;
+        }
+
+
+        .ac-container ac-adaptiveCard {
+            background-color: #cecccc !important;
+        }
+
+        .header1 {
+            color: white;
+            font-size: 16px;
+            margin-left: 9px;
+            font-family: Calibri, "Helvetica Neue", Arial, sans-serif;
+            background-color: #4873A4;
+            box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+            box-sizing: content-box;
+            font-weight: 500;
+            height: 30px;
+            left: 0;
+            letter-spacing: 0.5px;
+            padding: 8px 8px 0 8px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+        }
+
+        #webchat {
+            height: 83%;
+            width: 447px;
+            position: absolute;
+            border-top: solid 1px;
+            border-left: solid 1px;
+            border-right: solid 1px;
+            border-bottom: solid 1px;
+            border-color: initial;
+            border-image: initial;
+            bottom: 30px;
+            right: 131px;
+            z-index: 2;
+            background-color: #fff
+        }
+
+        #textBorder {
+            /*border-top: 13px solid #000;
+            border-left: solid 1px;
+            border-right: solid 1px;
+            border-bottom: solid 20px;*/
+            width: 458px;
+            position: absolute;
+            z-index: 1;
+            top: 76px;
+            right: 131px;
+            /*background-color: black;*/
+        }
+    </style>
+
+
+</body>
+</html>
+
+
+
+

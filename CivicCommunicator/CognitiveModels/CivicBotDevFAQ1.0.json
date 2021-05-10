@@ -1,0 +1,542 @@
+{
+  "luis_schema_version": "4.0.0",
+  "versionId": "Dispatch",
+  "name": "CivicBotDevFAQ1.0",
+  "desc": "Dispatch model for CivicBotDevFAQ1.0",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "None"
+    },
+    {
+      "name": "QnA",
+      "serviceConnections": {
+        "type": "QnA",
+        "appId": "b8ff5791-41b3-425f-98b9-c0e545a61eea",
+        "luisIncludedIntentNames": [],
+        "subscriptionKey": "5d11104cbf4a470fb641d64e5890a359"
+      }
+    },
+    {
+      "name": "TalkToHuman_Intent"
+    }
+  ],
+  "entities": [],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "agent",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "call",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "call me",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "can i call you",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "can i speak to someone",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "can i speak to you",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "can i speak to you?",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "can i speak with someone",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "can i talk to an agent",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "can i talk to human",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "can i talk to you",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "can someone call me",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "can you call me",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "can you call me?",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "can you connect me with a customer service agent",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "can you connect me with a customer service representative",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "can you connect me with a human",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "can you connect me with an agent",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "can you transfer me to a customer service agent",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "can you transfer me to a customer service representative",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "can you transfer me to a human",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "can you transfer me to a person",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "can you transfer me to a representative",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "customer service",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "customer service agent",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "customer service rep",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "customer service representative",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "do we lend on owner-occupied properties",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you do ground up/construction loans",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you do loans on rural properties",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you do personal loans",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you finance rehab",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you lend on multifamily properties",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you need my tax returns",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you offer personal loans",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you offer rental loans",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "does my fico matter",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "fees",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "fico",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "good evening",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "good morning",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "how can i reach out to my account executive/account manager",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "how can i reach out to my ae",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "how do i find out the status of my loan",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "how do i reach out to my account executive/account manager",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "how do i reach out to my ae",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "how quickly can you close",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "human",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "i need to talk to a human",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "i need to talk to a person",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "i need to talk to an agent",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "i need to talk to customer service",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "i want to interact with a customer service agent",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "i want to interact with a human",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "i want to know a little more about your programs",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "i want to speak to a customer service agent",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "i want to talk to a customer service agent",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "i want to talk to a human",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "i want to talk to a person",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "i want to talk to a real person",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "i want to talk to an agent",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "interest rates",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "is there a person available i can talk to",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "is there someone available",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "is there someone available now",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "is there someone i can call",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "is there someone i can talk to",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "is there someone i can talk with",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "ltv",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "max ltv",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "person",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "personal loans",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "phone",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "real human",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "real person",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "redirect me to customer service",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "rehab",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "rehab financing",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "rehab process",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "rental loans",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "representative",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "service agent",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "states",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "tell me about your rehab process",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what about personal loans",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what are your fees",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what are your interest rates",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what are your points on the deal",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what do you charge in fees",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what do you guys do",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what do you need from me to qualify for a loan",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what is your maximum loan amount you offer",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what is your minimum loan amount you offer",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what programs do you offer",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what states do you lend in?",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what's the status of my loan?",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what's your max loan to value",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "when is my first payment drafted",
+      "intent": "QnA",
+      "entities": []
+    }
+  ],
+  "settings": [
+    {
+      "name": "NormalizeDiacritics",
+      "value": "true"
+    }
+  ]
+}

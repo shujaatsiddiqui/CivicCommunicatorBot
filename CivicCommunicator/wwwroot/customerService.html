@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #webchat {
+            height: 90%;
+            width: 336px;
+            position: absolute;
+            border-top: solid 1px;
+            border-left: solid 1px;
+            border-right: solid 1px;
+            border-bottom: solid 1px;
+            border-color: initial;
+            border-image: initial;
+            bottom: 85px;
+            right: -7px;
+            z-index: 2;
+            background-color: #fff;
+            border-top-left-radius: 13px;
+            border-top-right-radius: 13px;
+            border-bottom-left-radius: 13px;
+            border-bottom-right-radius: 13px;
+        }
+        #botDiv {
+            /*height: 93%;*/
+            position: fixed;
+            bottom: -73px;
+            z-index: 1000;
+            background-color: #fff;
+            visibility: hidden;
+            right: 73px;
+        }
+
+        #botavatar {
+            width: 77px;
+            height: 75px;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            cursor: pointer;
+        }
+
+        .bounce {
+            cursor: pointer;
+            position: absolute;
+            right: 0px;
+            -webkit-animation: bounce 1s;
+            -webkit-animation-duration: 20s;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-delay: 0s;
+            -webkit-animation-iteration-count: infinite;
+        }
+
+        @-webkit-keyframes bounce {
+            0% {
+                bottom: 10px;
+            }
+
+            2% {
+                bottom: 20px;
+            }
+
+            4% {
+                bottom: 30px;
+            }
+
+            4% {
+                bottom: 40px;
+            }
+
+            6% {
+                bottom: 0px;
+            }
+
+            7% {
+                bottom: 10px;
+            }
+
+            8% {
+                bottom: 20px;
+            }
+
+            9% {
+                bottom: 30px;
+            }
+
+            10% {
+                bottom: 40px;
+            }
+
+            11% {
+                bottom: 0px;
+            }
+        }
+
+        #chatPopup {
+            width: 78px;
+            height: 58px;
+            background-color: #54BF9D;
+            border-radius: 4px;
+            position: fixed;
+            bottom: 80px;
+            right: 52px;
+            color: black;
+            padding-left: 5px;
+        }
+
+            #chatPopup:after {
+                content: "";
+                display: block;
+                position: fixed;
+                width: 0;
+                height: 0;
+                right: 10px;
+                bottom: -10px;
+                border-left: 10px solid transparent;
+                border-right: 2px solid transparent;
+                border-top: 10px solid #54BF9D;
+            }
+
+        #closeBouncy {
+            position: fixed;
+            bottom: 80px;
+            right: 23px;
+            color: black;
+            padding-left: 5px;
+        }
+        /* Mobile Styles */
+        @media only screen and (max-width: 400px) {
+            #botDiv {
+                height: 80%;
+                width: 80%;
+                bottom: -37px;
+            }
+        }
+
+        /* Tablet Styles */
+        @media only screen and (min-width: 401px) and (max-width: 960px) {
+            #botDiv {
+                height: 100%;
+            }
+        }
+
+        /* Desktop Styles */
+        @media only screen and (min-width: 961px) {
+            #botDiv {
+                height: 95%;
+            }
+        }
+        .header1 {
+            color: white;
+            font-size: 16px;
+            margin-left: 9px;
+            font-family: Calibri, "Helvetica Neue", Arial, sans-serif;
+            background-color: #4873A4;
+            box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+            box-sizing: content-box;
+            font-weight: 500;
+            height: 30px;
+            left: 0;
+            letter-spacing: 0.5px;
+            padding: 8px 8px 0 8px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <!--<div class="image" style="height: 100%;width:100%;background-repeat:no-repeat; background-size:cover;  background-image:url(https://i.imgur.com/Pwgtgf8.png)"></div>-->        
+    <!--<div class="bounce">
+            <div id="chatPopup" onclick="hideShow();">
+                <span class="inner-num" style="font-size: 12.5px">Need help? <b><u>Click here</u></b> for assistance! </span>
+            </div>
+        </div>-->
+        <!--<img src="/Style/Chatbot_Icon_AIDA.png" onclick="hideShow();" id="botavatar">-->
+       
+            <iframe src='https://webchat.botframework.com/embed/DemoTheBot?s=9WMB6pS5I9A.lkSPt-WOE7A7XFYyQcajwPrHb3bLQ6km67bsTs_eRc4' style='min-width: 400px; width: 100%; min-height: 500px;'></iframe>
+        
+    
+    <!--<script>
+        //Toggles between hide and show of the chat window.
+        //Toggles betweeen the alternate AIDA image icons.
+        function hideShow() {
+            let frame = document.getElementById("webchat");
+            frame.style.visibility = frame.style.visibility == "visible" ? "hidden" : "visible";
+            var img1 = "https://i.imgur.com/vCBGrr4.png";
+            var img2 = "https://i.imgur.com/hr6AyNY.png";
+            var imgElement = document.getElementById('botavatar');
+            imgElement.src = (imgElement.src === img1) ? img2 : img1;
+            let popup = document.getElementById("chatPopup");
+            popup.style.visibility = popup.style.visibility == "hidden" ? "visible" : "hidden";
+        }
+    </script>
+    <script>
+        //removes the bounce affect after the chat window opens
+        const element = document.getElementsByClassName('bounce')
+        element[0].addEventListener("click", function () { element[0].classList.remove('bounce'); })
+    </script>-->
+
+</body>
+</html>
+
+

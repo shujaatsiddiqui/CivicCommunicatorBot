@@ -1,0 +1,420 @@
+{
+  "luis_schema_version": "4.0.0",
+  "intents": [
+    {
+      "name": "QnA"
+    }
+  ],
+  "entities": [],
+  "composites": [],
+  "closedLists": [],
+  "prebuiltEntities": [],
+  "utterances": [
+    {
+      "text": "redirect me to customer service",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "i want to talk to a customer service agent",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "i want to talk to a human",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "i want to talk to an agent",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "agent",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "human",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "i want to interact with a customer service agent",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "i want to interact with a human",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "customer service agent",
+      "intent": "TalkToHuman_Intent",
+      "entities": []
+    },
+    {
+      "text": "what do you charge in fees",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you do personal loans",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "rental loans",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what's your max loan to value",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what are your fees",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "can i change my payment method",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you lend in nevada?",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "fees",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you lend in washington",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "i want to know a little more about your programs",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what states do you lend in",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what is the minimum loan amount you can offer",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you lend in virginia?",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you finance rehab",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what are your interest rates",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "rehab process",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what's the status of my loan?",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you lend in california?",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you lend on owner-occupied properties",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what does civic do",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "states",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what do you need from me to qualify for a loan",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what are your points on the deal",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you lend in hawaii?",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "programs",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "multifamily",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what programs do you offer",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you lend in colorado",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you lend on multifamily properties",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you lend in tennessee?",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "personal loans",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "tell me about your rehab process",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what is the maximum loan amount you can offer",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "rehab",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "ltv",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "rental",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you lend in oregon?",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "good evening",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "max ltv",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you offer personal loans",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you need my tax returns",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "interest rates",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you lend in arizona",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "third party acting on behalf of borrower",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you lend in utah?",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what kind of programs do you have",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you lend in florida?",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what do you guys do",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you do ground up construction loans",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "request a rehab draw",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what about personal loans",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "when is my first payment drafted",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you lend in north carolina?",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you lend in georgia?",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "when is the borrower's first payment after a holdback",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you offer rental loans",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "rental program",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "how do i reach out to my account executive?",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you lend in texas?",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "rehab draw",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "how quickly can you close",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you lend in south carolina",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "what's civic",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "good morning",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "rehab finance program",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "do you do loans on rural properties",
+      "intent": "QnA",
+      "entities": []
+    },
+    {
+      "text": "how do i find out the status of my loan",
+      "intent": "QnA",
+      "entities": []
+    }
+  ],
+  "versionId": "Dispatch",
+  "name": "CivicBotDevFAQ1.2",
+  "desc": "Dispatch model for CivicBotDevFAQ1.2",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "settings": [
+    {
+      "name": "NormalizeDiacritics",
+      "value": "true"
+    }
+  ]
+}
